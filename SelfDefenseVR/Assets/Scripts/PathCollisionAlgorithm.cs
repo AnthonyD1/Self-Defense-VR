@@ -4,12 +4,10 @@ using UnityEngine;
 public class PathCollisionAlgorithm : MonoBehaviour
 {
     private SphereCollider[] sphereColliders;
-    private int count;
 
     // Use this for initialization
     void Start()
     {
-        //count = 0;
         sphereColliders = GetComponentsInChildren<SphereCollider>(); // initialize the array bro
 
         // disable all colliders except first sphere
