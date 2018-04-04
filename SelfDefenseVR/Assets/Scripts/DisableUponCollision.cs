@@ -1,12 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class DisableUponCollision : MonoBehaviour {
+public class DisableUponCollision : MonoBehaviour
+{
     private SphereCollider sphereCollider;
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
         sphereCollider = this.GetComponent<SphereCollider>();
 	}
 
@@ -25,7 +25,6 @@ public class DisableUponCollision : MonoBehaviour {
             }
         }
         return null;
-
     }
 
     private void OnTriggerEnter(Collider other)
@@ -43,7 +42,8 @@ public class DisableUponCollision : MonoBehaviour {
         }
     }
     // Update is called once per frame
-    void Update () {
+    void Update ()
+    {
 		
 	}
 }
