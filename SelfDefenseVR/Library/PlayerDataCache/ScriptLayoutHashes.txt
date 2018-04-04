@@ -191,3 +191,6 @@ a8ed45ab553b07236625df6cc6ac449c Assembly-CSharp.dll:.OVRLint
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OvrAvatarHand
 558ebdd5c791d30ce7c6bd84adf7245b Assembly-CSharp.dll:.PlayerController
 85945c52833a42f4c8ccdc8b47380cb2 Assembly-CSharp.dll:Oculus.Platform.CallbackRunner
+7bf4c0df1720bbfe84268257857189fa Assembly-CSharp.dll:.ChangeToRight
+7bf4c0df1720bbfe84268257857189fa Assembly-CSharp.dll:.ChangeToLeft
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DisableRight
