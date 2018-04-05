@@ -1,9 +1,10 @@
 WindowsStandalone
 SceneListBegin?
-Assets/Scenes/test.unity
+Assets/Scenes/Tutorial.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OvrAvatarBody
 a935519ff56e5eee54d08ee4da0929a0 Assembly-CSharp.dll:.OVRMixedRealityCaptureSettings
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DisableRight
 7df47d262399a6f845c2ed06b92cba9b Assembly-CSharp.dll:.OVRCameraRig
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 dbc29a6f2739d277c10da432d73adb6d UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -54,6 +55,7 @@ f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 86d36c43c53541d667100dc90b89cfba UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 63819ec385f3bbd3917551066aa9525f Assembly-CSharp.dll:.OVRRaycaster
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RecoveryBag
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -128,15 +130,18 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 e260426351ec92be2f530452a4fbec58 Assembly-CSharp.dll:.OVROverlay
+7bf4c0df1720bbfe84268257857189fa Assembly-CSharp.dll:.ChangeToLeft
 553028ff2845bac843ab4c26e781c024 Assembly-CSharp.dll:.OVRProgressIndicator
 a97206b1f732dc0aa9b23a14352f4399 Assembly-CSharp.dll:.OVRPlatformMenu
 13a6a1a75679b3c0344b1b6c7e825e34 Assembly-CSharp.dll:.OvrAvatarComponent
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OvrAvatarTouchController
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OVRDebugInfo
 069dbb2201dc5bbfc5610a4e530f0cd0 Assembly-CSharp.dll:.OvrAvatarSkinnedMeshRenderPBSComponent
+7bf4c0df1720bbfe84268257857189fa Assembly-CSharp.dll:.ChangeToRight
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DisableUponCollision
 9a93f748b7c6fda90f20cf8d995df907 Assembly-CSharp.dll:.OVRResetOrientation
 4b21a475fcdbf93662b1f31c2977c8f8 Assembly-CSharp.dll:Oculus.Platform.VoipAudioSourceHiLevel
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BagLimit
 9a60eb1ce9987b455f2c31e8cf6c22c1 Assembly-CSharp.dll:.OVRScreenFade
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
@@ -176,6 +181,7 @@ e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 5601a5517df0b1688b4d3e4cbd44d6d7 Assembly-CSharp.dll:Oculus.Platform.PlatformSettings
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 6de6070780d7efa822923e689e617f4c Assembly-CSharp.dll:.OvrAvatarMeshInstance
+7bf4c0df1720bbfe84268257857189fa Assembly-CSharp.dll:.ChangeToRightHook
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
@@ -190,7 +196,5 @@ a8ed45ab553b07236625df6cc6ac449c Assembly-CSharp.dll:.OVRLint
 584795015275d7765225ad872c0e8bd8 Assembly-CSharp.dll:.OVRGrabber
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OvrAvatarHand
 558ebdd5c791d30ce7c6bd84adf7245b Assembly-CSharp.dll:.PlayerController
+7bf4c0df1720bbfe84268257857189fa Assembly-CSharp.dll:.ChangeToLeftHook
 85945c52833a42f4c8ccdc8b47380cb2 Assembly-CSharp.dll:Oculus.Platform.CallbackRunner
-7bf4c0df1720bbfe84268257857189fa Assembly-CSharp.dll:.ChangeToRight
-7bf4c0df1720bbfe84268257857189fa Assembly-CSharp.dll:.ChangeToLeft
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DisableRight
