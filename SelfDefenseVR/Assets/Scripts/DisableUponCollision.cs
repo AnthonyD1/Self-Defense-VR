@@ -33,6 +33,10 @@ public class DisableUponCollision : MonoBehaviour
         {
             this.sphereCollider.enabled = false; // disable collider
             this.sphereCollider.gameObject.SetActive(false);
+<<<<<<< HEAD
+=======
+            OVRHaptics.
+>>>>>>> parent of 69618c3... Deleted OVRheptics
 
             Transform nextSphere = GetNext();
             //if (nextSphere == null) return;
