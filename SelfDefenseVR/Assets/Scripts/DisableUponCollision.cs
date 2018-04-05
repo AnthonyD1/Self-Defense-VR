@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
+using System.Runtime.InteropServices;
 
 public class DisableUponCollision : MonoBehaviour
 {
@@ -33,6 +35,7 @@ public class DisableUponCollision : MonoBehaviour
         {
             this.sphereCollider.enabled = false; // disable collider
             this.sphereCollider.gameObject.SetActive(false);
+            OVRHaptics.
 
             Transform nextSphere = GetNext();
             //if (nextSphere == null) return;
