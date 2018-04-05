@@ -1,6 +1,10 @@
 WindowsStandalone
 SceneListBegin?
+<<<<<<< HEAD
 Assets/Scenes/AnimationTesting.unity
+=======
+Assets/Scenes/Tutorial.unity
+>>>>>>> 69618c39e65782c0abda14dfc5111a29f00660a6
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OvrAvatarBody
 a935519ff56e5eee54d08ee4da0929a0 Assembly-CSharp.dll:.OVRMixedRealityCaptureSettings
@@ -194,5 +198,10 @@ a8ed45ab553b07236625df6cc6ac449c Assembly-CSharp.dll:.OVRLint
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OvrAvatarHand
 558ebdd5c791d30ce7c6bd84adf7245b Assembly-CSharp.dll:.PlayerController
 85945c52833a42f4c8ccdc8b47380cb2 Assembly-CSharp.dll:Oculus.Platform.CallbackRunner
+<<<<<<< HEAD
 7bf4c0df1720bbfe84268257857189fa Assembly-CSharp.dll:.ChangeToLeftHook
 7bf4c0df1720bbfe84268257857189fa Assembly-CSharp.dll:.ChangeToRightHook
+=======
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RecoveryBag
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BagLimit
+>>>>>>> 69618c39e65782c0abda14dfc5111a29f00660a6
