@@ -1,10 +1,9 @@
 WindowsStandalone
 SceneListBegin?
-Assets/Scenes/AnimationTesting.unity
+Assets/Scenes/test.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OvrAvatarBody
 a935519ff56e5eee54d08ee4da0929a0 Assembly-CSharp.dll:.OVRMixedRealityCaptureSettings
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DisableRight
 7df47d262399a6f845c2ed06b92cba9b Assembly-CSharp.dll:.OVRCameraRig
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 dbc29a6f2739d277c10da432d73adb6d UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -129,14 +128,12 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 e260426351ec92be2f530452a4fbec58 Assembly-CSharp.dll:.OVROverlay
-7bf4c0df1720bbfe84268257857189fa Assembly-CSharp.dll:.ChangeToLeft
 553028ff2845bac843ab4c26e781c024 Assembly-CSharp.dll:.OVRProgressIndicator
 a97206b1f732dc0aa9b23a14352f4399 Assembly-CSharp.dll:.OVRPlatformMenu
 13a6a1a75679b3c0344b1b6c7e825e34 Assembly-CSharp.dll:.OvrAvatarComponent
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OvrAvatarTouchController
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OVRDebugInfo
 069dbb2201dc5bbfc5610a4e530f0cd0 Assembly-CSharp.dll:.OvrAvatarSkinnedMeshRenderPBSComponent
-7bf4c0df1720bbfe84268257857189fa Assembly-CSharp.dll:.ChangeToRight
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DisableUponCollision
 9a93f748b7c6fda90f20cf8d995df907 Assembly-CSharp.dll:.OVRResetOrientation
 4b21a475fcdbf93662b1f31c2977c8f8 Assembly-CSharp.dll:Oculus.Platform.VoipAudioSourceHiLevel
@@ -194,5 +191,6 @@ a8ed45ab553b07236625df6cc6ac449c Assembly-CSharp.dll:.OVRLint
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OvrAvatarHand
 558ebdd5c791d30ce7c6bd84adf7245b Assembly-CSharp.dll:.PlayerController
 85945c52833a42f4c8ccdc8b47380cb2 Assembly-CSharp.dll:Oculus.Platform.CallbackRunner
-7bf4c0df1720bbfe84268257857189fa Assembly-CSharp.dll:.ChangeToLeftHook
-7bf4c0df1720bbfe84268257857189fa Assembly-CSharp.dll:.ChangeToRightHook
+7bf4c0df1720bbfe84268257857189fa Assembly-CSharp.dll:.ChangeToRight
+7bf4c0df1720bbfe84268257857189fa Assembly-CSharp.dll:.ChangeToLeft
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DisableRight
