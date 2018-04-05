@@ -35,7 +35,7 @@ public class DisableUponCollision : MonoBehaviour
         {
             this.sphereCollider.enabled = false; // disable collider
             this.sphereCollider.gameObject.SetActive(false);
-            OVRHaptics.
+            
 
             Transform nextSphere = GetNext();
             //if (nextSphere == null) return;
