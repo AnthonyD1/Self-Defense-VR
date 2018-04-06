@@ -15,7 +15,7 @@ public class ChangeToRight : MonoBehaviour {
 
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("rightHand"))
         {

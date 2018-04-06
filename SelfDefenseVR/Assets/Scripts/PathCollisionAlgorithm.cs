@@ -33,16 +33,8 @@ public class PathCollisionAlgorithm : MonoBehaviour
 	// Update is called once per frame
     void Update ()
     {
-        /*
-		for(int i = 0; i < sphereColliders.Length; i++)
-        {
-            if (!sphereColliders[i].gameObject.activeSelf)
-            {
-                count++;
-            }
-        }
-        */
-        if (!sphereColliders[sphereColliders.Length - 1].gameObject.activeSelf)
+
+        if (sphereColliders.Length != 0 && !sphereColliders[sphereColliders.Length - 1].gameObject.activeSelf)
         {
             StartCoroutine("Reset");
         }
