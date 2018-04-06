@@ -9,7 +9,7 @@ public class DrillScene : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "rightHand" || other.gameObject.tag == "leftHand") {
-            //SceneManager.LoadScene("Drill", LoadSceneMode.Single);
+            SceneManager.LoadScene("Drill", LoadSceneMode.Single);
         }
     }
 }
