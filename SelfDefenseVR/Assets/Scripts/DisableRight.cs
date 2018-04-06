@@ -38,8 +38,10 @@ public class DisableRight : MonoBehaviour
             this.sphereCollider.gameObject.SetActive(false);
 
             Transform nextSphere = GetNext();
-            //if (nextSphere == null) return;
-            nextSphere.GetComponent<SphereCollider>().enabled = true; // enable next sphere collider
+            if (nextSphere == null) {
+                nextSphere.GetComponent<SphereCollider>().enabled = true; // enable next sphere collider
+            }
+            
 
 
         }
