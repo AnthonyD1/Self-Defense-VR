@@ -1,6 +1,10 @@
 WindowsStandalone
+PlayerPath?
+C:/Users/comps/Desktop/Self-Defense-VR/SelfDefenseVR/Build/Fight.exe
 SceneListBegin?
+Assets/Scenes/MainMenu.unity
 Assets/Scenes/AnimationTesting.unity
+Assets/Scenes/Tutorial.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OvrAvatarBody
 a935519ff56e5eee54d08ee4da0929a0 Assembly-CSharp.dll:.OVRMixedRealityCaptureSettings
@@ -55,6 +59,7 @@ f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 86d36c43c53541d667100dc90b89cfba UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 63819ec385f3bbd3917551066aa9525f Assembly-CSharp.dll:.OVRRaycaster
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RecoveryBag
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -140,6 +145,7 @@ a97206b1f732dc0aa9b23a14352f4399 Assembly-CSharp.dll:.OVRPlatformMenu
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DisableUponCollision
 9a93f748b7c6fda90f20cf8d995df907 Assembly-CSharp.dll:.OVRResetOrientation
 4b21a475fcdbf93662b1f31c2977c8f8 Assembly-CSharp.dll:Oculus.Platform.VoipAudioSourceHiLevel
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BagLimit
 9a60eb1ce9987b455f2c31e8cf6c22c1 Assembly-CSharp.dll:.OVRScreenFade
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
@@ -175,10 +181,17 @@ ccd25ccca39fd5159c3471f7762e1ced Assembly-CSharp.dll:.OVRChromaticAberration
 96d0fbde9fd209878a0a291f82c9bcdd UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
 64eb32cc721b1cc68a91ed57461e188c UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
 8034566cc95d936e93f4b77ff843d1ce Assembly-CSharp.dll:.PoseEditHelper
+9e0ef5bf862444b5dc48b5a99554ce7c UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioListenerExtension
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
+67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
+67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
 5601a5517df0b1688b4d3e4cbd44d6d7 Assembly-CSharp.dll:Oculus.Platform.PlatformSettings
+9e0ef5bf862444b5dc48b5a99554ce7c UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioListenerExtension
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
+67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
+67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
 6de6070780d7efa822923e689e617f4c Assembly-CSharp.dll:.OvrAvatarMeshInstance
+7bf4c0df1720bbfe84268257857189fa Assembly-CSharp.dll:.ChangeToRightHook
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
@@ -193,8 +206,7 @@ a8ed45ab553b07236625df6cc6ac449c Assembly-CSharp.dll:.OVRLint
 584795015275d7765225ad872c0e8bd8 Assembly-CSharp.dll:.OVRGrabber
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OvrAvatarHand
 558ebdd5c791d30ce7c6bd84adf7245b Assembly-CSharp.dll:.PlayerController
-85945c52833a42f4c8ccdc8b47380cb2 Assembly-CSharp.dll:Oculus.Platform.CallbackRunner
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RecoveryBag
 7bf4c0df1720bbfe84268257857189fa Assembly-CSharp.dll:.ChangeToLeftHook
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BagLimit
-7bf4c0df1720bbfe84268257857189fa Assembly-CSharp.dll:.ChangeToRightHook
+85945c52833a42f4c8ccdc8b47380cb2 Assembly-CSharp.dll:Oculus.Platform.CallbackRunner
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TutorialScene
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DrillScene

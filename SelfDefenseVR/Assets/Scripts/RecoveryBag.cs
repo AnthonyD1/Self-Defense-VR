@@ -14,6 +14,7 @@ public class RecoveryBag : MonoBehaviour
     {
         bagOriginalPos = this.gameObject.GetComponent<Transform>().position;
         bagCurrentPos = this.gameObject.GetComponent<Transform>();
+        bagBody = this.gameObject.GetComponent<Rigidbody>();
 
     }
 
