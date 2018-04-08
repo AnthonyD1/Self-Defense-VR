@@ -751,7 +751,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.07, y: 0.07, z: 0.07}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0.03, y: -0.03, z: -0.02}
 --- !u!1 &213525070 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100012, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
@@ -1580,6 +1580,22 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &384592280 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1772134904049308, guid: b493ce232c873e047817b3fa55059a8c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1824634504}
+--- !u!114 &384592282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 384592280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecd27570207c3bc4ea8dd5835554fb71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &434202324
 GameObject:
   m_ObjectHideFlags: 0
@@ -2568,6 +2584,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &771864748 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1894407785403656, guid: b493ce232c873e047817b3fa55059a8c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1824634504}
+--- !u!114 &771864750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 771864748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecd27570207c3bc4ea8dd5835554fb71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &772133731
 GameObject:
   m_ObjectHideFlags: 0
@@ -3026,7 +3058,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.07, y: 0.07, z: 0.07}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: -0.03, y: -0.03, z: -0.02}
 --- !u!54 &872602287
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3594,6 +3626,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &1016257875 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1059931340929428, guid: b493ce232c873e047817b3fa55059a8c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1824634504}
+--- !u!114 &1016257877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1016257875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecd27570207c3bc4ea8dd5835554fb71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1017508366
 GameObject:
   m_ObjectHideFlags: 0
@@ -4422,6 +4470,22 @@ Transform:
   m_Father: {fileID: 1187260175}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1237835098 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1172913081675390, guid: b493ce232c873e047817b3fa55059a8c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1824634504}
+--- !u!114 &1237835100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1237835098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecd27570207c3bc4ea8dd5835554fb71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1242639324
 GameObject:
   m_ObjectHideFlags: 0
@@ -5447,6 +5511,22 @@ Transform:
   m_Father: {fileID: 230462541}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1507914296 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1247511984754364, guid: b493ce232c873e047817b3fa55059a8c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1824634504}
+--- !u!114 &1507914298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1507914296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecd27570207c3bc4ea8dd5835554fb71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1519175385
 GameObject:
   m_ObjectHideFlags: 0
@@ -6444,7 +6524,12 @@ Prefab:
       propertyPath: m_Name
       value: Boris R Jab Path
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114721893925255790, guid: b493ce232c873e047817b3fa55059a8c, type: 2}
+    - {fileID: 114100679136975976, guid: b493ce232c873e047817b3fa55059a8c, type: 2}
+    - {fileID: 114897542651792646, guid: b493ce232c873e047817b3fa55059a8c, type: 2}
+    - {fileID: 114779600830290928, guid: b493ce232c873e047817b3fa55059a8c, type: 2}
+    - {fileID: 114952656904891084, guid: b493ce232c873e047817b3fa55059a8c, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b493ce232c873e047817b3fa55059a8c, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1824634505 stripped

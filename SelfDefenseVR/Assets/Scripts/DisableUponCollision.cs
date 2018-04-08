@@ -38,7 +38,7 @@ public class DisableUponCollision : MonoBehaviour
             
 
             Transform nextSphere = GetNext();
-            if (nextSphere == null) {
+            if (nextSphere != null) {
                 nextSphere.GetComponent<SphereCollider>().enabled = true; // enable next sphere collider
             }
            
