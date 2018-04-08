@@ -6,16 +6,27 @@ public class ChangeToRightHook : MonoBehaviour {
 
     public GameObject LeftPath;
     public GameObject RightPath;
+    public GameObject Boris;
     private Animator BorisAnimator;
+    private AudioSource punchSound;
+    private bool hasPlayed = false;
 
 
     private void Awake()
     {
-        BorisAnimator = GetComponent<Animator>();
-
+        BorisAnimator = Boris.GetComponent<Animator>();
+        punchSound = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider other)
+    {
+        if (hasPlayed == false) {
+            punchSound.Play();
+            hasPlayed = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("leftHand"))
         {
@@ -25,6 +36,7 @@ public class ChangeToRightHook : MonoBehaviour {
             RightPath.SetActive(false);
 
             BorisAnimator.SetBool("HitLeftPad", false);
+            hasPlayed = false;
         }
     }
 }

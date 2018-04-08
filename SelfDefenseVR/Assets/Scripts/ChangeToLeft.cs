@@ -6,30 +6,38 @@ public class ChangeToLeft : MonoBehaviour {
 
     public GameObject LeftPath;
     public GameObject RightPath;
+    public GameObject Boris;
     private Animator BorisAnimator;
+    private AudioSource punchSound;
+    private bool hasPlayed = false;
 
 
     private void Awake()
     {
-        BorisAnimator = GetComponent<Animator>();
-
+        BorisAnimator = Boris.GetComponent<Animator>();
+        punchSound = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider other)
+    {
+        if (hasPlayed == false) {
+            punchSound.Play();
+            hasPlayed = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("leftHand"))
         {
 
             BorisAnimator.SetBool("HitLeftPad", true);
 
-            //bLeftElbow.transform.Rotate(new Vector3(0, 70, 0));//t-pose
-
-            //bRightElbow.transform.Rotate(new Vector3 (0, 70, 0));//t-pose
-
             LeftPath.SetActive(false);
             RightPath.SetActive(true);
 
             BorisAnimator.SetBool("HitRightPad", false);
+            hasPlayed = false;
         }
     }
 }

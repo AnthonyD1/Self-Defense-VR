@@ -9,6 +9,8 @@ TagManager:
   - leftHand
   - rightHand
   - Ground
+  - LeftPad
+  - RightPad
   layers:
   - Default
   - TransparentFX
