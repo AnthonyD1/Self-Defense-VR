@@ -8,6 +8,7 @@ TagManager:
   - rightController
   - leftHand
   - rightHand
+  - Ground
   layers:
   - Default
   - TransparentFX
