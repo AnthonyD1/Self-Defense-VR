@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Drill1Logic : MonoBehaviour {
+public class Drill1Logic : MonoBehaviour
+{
 
     private Transform[] paths = new Transform[6];
     private Animator BorisAnimator;
@@ -25,10 +26,8 @@ public class Drill1Logic : MonoBehaviour {
         Transform[] temp;
         temp = path.GetComponentsInChildren<Transform>();
         int i = 0;
-        foreach(Transform t in temp)
-        {
-            if(t.parent == path.transform)
-            {
+        foreach (Transform t in temp) {
+            if (t.parent == path.transform) {
                 paths[i] = t;
                 paths[i].gameObject.SetActive(false);
                 i++;
@@ -46,59 +45,50 @@ public class Drill1Logic : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("leftHand") && leftHand)
-        {
-            //Debug.Log("Left punch");
-            //Debug.Log(pathCount);
-            
+        if (other.gameObject.CompareTag("leftHand") && leftHand) {
+            // if you have reached the end of the array of animations
             if (rightCount > 2) rightCount = 0;
             BorisAnimator.SetBool(rightMoves[rightCount], true); // hit with left hand so next move is right hand
-            //Debug.Log("Leftanimation");
-            //Debug.Log("Right Count:" + rightCount);
-
-            //Debug.Log(paths.Length);
             if (pathCount < paths.Length - 1) {
                 paths[pathCount].gameObject.SetActive(false);
                 paths[pathCount + 1].gameObject.SetActive(true);
-            }
-            else if(pathCount == 6){
-                paths[pathCount - 1].gameObject.SetActive(false);
+                pathCount++;
+            } else {
+                // turn off the previous strike path and turn on the next strike path
+                paths[pathCount].gameObject.SetActive(false);
                 paths[0].gameObject.SetActive(true);
                 pathCount = 0;
             }
 
+            // if you have reached the end of the array of animations
             if (leftCount > 2) leftCount = 0;
             BorisAnimator.SetBool(leftMoves[leftCount], false);
 
             leftHand = false;
             leftCount++;
-            
-        }
-        else if (other.gameObject.CompareTag("rightHand") && !leftHand) 
-        {
-            
-            //Debug.Log("right Punch");
-            //Debug.Log(pathCount);
+
+        } else if (other.gameObject.CompareTag("rightHand") && !leftHand) {
+            // if you have reached the end of the array of animations
             if (leftCount > 2) leftCount = 0;
             BorisAnimator.SetBool(leftMoves[leftCount], true); // hit with left hand so next move is right hand
-            //Debug.Log("Rightanimation");
-            //Debug.Log("Left Count:" + leftCount);
 
             if (pathCount < paths.Length - 1) {
                 paths[pathCount].gameObject.SetActive(false);
                 paths[pathCount + 1].gameObject.SetActive(true);
+                pathCount++;
 
-            } else if (pathCount == 6) {
-                paths[pathCount - 1].gameObject.SetActive(false);
+            } else {
+                // turn off the previous strike path and turn on the next strike path
+                paths[pathCount].gameObject.SetActive(false);
                 paths[0].gameObject.SetActive(true);
                 pathCount = 0;
             }
 
+            // if you have reached the end of the array of animations
             if (rightCount > 2) rightCount = 0;
             BorisAnimator.SetBool(rightMoves[rightCount], false);
             leftHand = true;
             rightCount++;
         }
-        pathCount++;
     }
 }
