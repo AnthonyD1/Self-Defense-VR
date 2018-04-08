@@ -3,8 +3,10 @@ PlayerPath?
 C:/Users/comps/Desktop/Self-Defense-VR/SelfDefenseVR/Build/Fight.exe
 SceneListBegin?
 Assets/Scenes/MainMenu.unity
-Assets/Scenes/AnimationTesting.unity
-Assets/Scenes/Tutorial.unity
+Assets/Scenes/JabTutorial.unity
+Assets/Scenes/Drill1.unity
+Assets/Scenes/HookTutorial.unity
+Assets/Scenes/UppercutTutorial.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OvrAvatarBody
 a935519ff56e5eee54d08ee4da0929a0 Assembly-CSharp.dll:.OVRMixedRealityCaptureSettings
@@ -139,6 +141,7 @@ e260426351ec92be2f530452a4fbec58 Assembly-CSharp.dll:.OVROverlay
 a97206b1f732dc0aa9b23a14352f4399 Assembly-CSharp.dll:.OVRPlatformMenu
 13a6a1a75679b3c0344b1b6c7e825e34 Assembly-CSharp.dll:.OvrAvatarComponent
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OvrAvatarTouchController
+8a0f06accf7405e70d6ae5dc28c15a54 Assembly-CSharp.dll:.Drill1Logic
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OVRDebugInfo
 069dbb2201dc5bbfc5610a4e530f0cd0 Assembly-CSharp.dll:.OvrAvatarSkinnedMeshRenderPBSComponent
 7bf4c0df1720bbfe84268257857189fa Assembly-CSharp.dll:.ChangeToRight
@@ -149,6 +152,7 @@ a97206b1f732dc0aa9b23a14352f4399 Assembly-CSharp.dll:.OVRPlatformMenu
 9a60eb1ce9987b455f2c31e8cf6c22c1 Assembly-CSharp.dll:.OVRScreenFade
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
+c4b30debd1f401dfdceec8e9aef60b82 Assembly-CSharp.dll:.Teleporter
 ccd25ccca39fd5159c3471f7762e1ced Assembly-CSharp.dll:.OVRMonoscopic
 74a6fefe8bd94289ab461e70916d7ac3 Assembly-CSharp.dll:.OVRGrabbable
 1e042027c649b7b536a46a4e0335362a Assembly-CSharp.dll:.OVRCubemapCapture
@@ -208,5 +212,4 @@ a8ed45ab553b07236625df6cc6ac449c Assembly-CSharp.dll:.OVRLint
 558ebdd5c791d30ce7c6bd84adf7245b Assembly-CSharp.dll:.PlayerController
 7bf4c0df1720bbfe84268257857189fa Assembly-CSharp.dll:.ChangeToLeftHook
 85945c52833a42f4c8ccdc8b47380cb2 Assembly-CSharp.dll:Oculus.Platform.CallbackRunner
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TutorialScene
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DrillScene
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SceneChange
