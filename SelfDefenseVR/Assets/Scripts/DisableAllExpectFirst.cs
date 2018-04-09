@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class PathCollisionAlgorithm : MonoBehaviour
+public class DisableAllExpectFirst : MonoBehaviour
 {
     private SphereCollider[] sphereColliders;
 
