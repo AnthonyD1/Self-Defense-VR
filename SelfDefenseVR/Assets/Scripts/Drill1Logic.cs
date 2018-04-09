@@ -9,19 +9,14 @@ public class Drill1Logic : MonoBehaviour
     private Animator BorisAnimator;
     public GameObject path;
 
-
-    private bool leftHand;
-    private int leftCount;
-    private int rightCount;
+    
+    private int movesCount;
     private int pathCount;
-
-    private string[] leftMoves = { "LeftJab", "LeftHook", "LeftUpperCut" };
-    private string[] rightMoves = { "RightJab", "RightHook", "RightUpperCut" };
+    private string[] moves = { "LeftJab", "RightJab", "LeftHook", "RightHook", "LeftUpperCut", "RightUpperCut" };
 
 
     private void Awake()
     {
-        leftHand = true;
         //paths = GameObject.Find("Path").GetComponentsInChildren<Transform>(); // initialize the paths array
         Transform[] temp;
         temp = path.GetComponentsInChildren<Transform>();
@@ -36,64 +31,49 @@ public class Drill1Logic : MonoBehaviour
 
         paths[0].gameObject.SetActive(true);
         BorisAnimator = GetComponent<Animator>();
-        leftCount = 0;
-        rightCount = 0;
+        movesCount = 0;
         pathCount = 0;
 
 
     }
 
+    private void MovesSwitch()
+    {
+
+        if (movesCount == moves.Length - 1) {
+            BorisAnimator.SetBool(moves[movesCount], false);
+            BorisAnimator.SetBool(moves[0], true);
+
+        } else {
+
+            BorisAnimator.SetBool(moves[movesCount], false);
+            BorisAnimator.SetBool(moves[movesCount + 1], true);
+        }
+
+        movesCount++;
+
+
+        if (pathCount < paths.Length - 1) {
+            paths[pathCount].gameObject.SetActive(false);
+            paths[pathCount + 1].gameObject.SetActive(true);
+            pathCount++;
+        } else {
+            // turn off the previous strike path and turn on the next strike path
+            paths[pathCount].gameObject.SetActive(false);
+            paths[0].gameObject.SetActive(true);
+            pathCount = 0;
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("leftHand") && leftHand) {
+        // if you have reached the end of the array of animations
+        if (movesCount > moves.Length - 1) movesCount = 0;
 
-            // if you have reached the end of the array of animations
-            if (rightCount > 2) rightCount = 0;
-            BorisAnimator.SetBool(rightMoves[rightCount], true); // hit with left hand so next move is right hand
-
-
-            // if you have reached the end of the array of animations
-            if (leftCount > 2) leftCount = 0;
-            BorisAnimator.SetBool(leftMoves[leftCount], false);
-
-            leftHand = false;
-            leftCount++;
-
-
-            if (pathCount < paths.Length - 1) {
-                paths[pathCount].gameObject.SetActive(false);
-                paths[pathCount + 1].gameObject.SetActive(true);
-                pathCount++;
-            } else {
-                // turn off the previous strike path and turn on the next strike path
-                paths[pathCount].gameObject.SetActive(false);
-                paths[0].gameObject.SetActive(true);
-                pathCount = 0;
-            }
-
-        } else if (other.gameObject.CompareTag("rightHand") && !leftHand) {
-            // if you have reached the end of the array of animations
-            if (leftCount > 2) leftCount = 0;
-            BorisAnimator.SetBool(leftMoves[leftCount], true); // hit with left hand so next move is right hand
-
-            // if you have reached the end of the array of animations
-            if (rightCount > 2) rightCount = 0;
-            BorisAnimator.SetBool(rightMoves[rightCount], false);
-
-            leftHand = true;
-            rightCount++;
-
-            if (pathCount < paths.Length - 1) {
-                paths[pathCount].gameObject.SetActive(false);
-                paths[pathCount + 1].gameObject.SetActive(true);
-                pathCount++;
-
-            } else {
-                // turn off the previous strike path and turn on the next strike path
-                paths[pathCount].gameObject.SetActive(false);
-                paths[0].gameObject.SetActive(true);
-                pathCount = 0;
-            }
+        if (other.gameObject.CompareTag("leftHand") && moves[movesCount][0] == 'L') {
+            MovesSwitch();
+        } else if (other.gameObject.CompareTag("rightHand") && moves[movesCount][0] == 'R') {
+            MovesSwitch();
         }
     }
 }

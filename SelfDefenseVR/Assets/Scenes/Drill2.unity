@@ -167,7 +167,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 32599554}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 445c1936a41023a408646e0ebdef9c62, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f2ffb11d0adc7241908e7b5e74368de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   path: {fileID: 1061047486}
@@ -2191,6 +2191,30 @@ Prefab:
     - target: {fileID: 4927273322160108, guid: ddcdb7e94a92f5145b7729eaadb4c048, type: 2}
       propertyPath: m_LocalPosition.y
       value: 0.486
+      objectReference: {fileID: 0}
+    - target: {fileID: 1784957305776406, guid: ddcdb7e94a92f5145b7729eaadb4c048, type: 2}
+      propertyPath: m_Name
+      value: LeftJab
+      objectReference: {fileID: 0}
+    - target: {fileID: 1902567702521014, guid: ddcdb7e94a92f5145b7729eaadb4c048, type: 2}
+      propertyPath: m_Name
+      value: RightJab
+      objectReference: {fileID: 0}
+    - target: {fileID: 1606587137253162, guid: ddcdb7e94a92f5145b7729eaadb4c048, type: 2}
+      propertyPath: m_Name
+      value: LeftHook
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183289771071576, guid: ddcdb7e94a92f5145b7729eaadb4c048, type: 2}
+      propertyPath: m_Name
+      value: RightHook
+      objectReference: {fileID: 0}
+    - target: {fileID: 1033777532751102, guid: ddcdb7e94a92f5145b7729eaadb4c048, type: 2}
+      propertyPath: m_Name
+      value: LeftUpperCut
+      objectReference: {fileID: 0}
+    - target: {fileID: 1298686343760854, guid: ddcdb7e94a92f5145b7729eaadb4c048, type: 2}
+      propertyPath: m_Name
+      value: RightUpperCut
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ddcdb7e94a92f5145b7729eaadb4c048, type: 2}
