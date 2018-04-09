@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 
-public class DisableUponCollision : MonoBehaviour
+public class DisableUponCollisionLeft : MonoBehaviour
 {
     private SphereCollider sphereCollider;
 

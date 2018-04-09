@@ -18,7 +18,7 @@ public class Teleporter : MonoBehaviour {
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, RayLength)) {
-            if(hit.collider.tag == "Ground" && OVRInput.Get(OVRInput.Button.One, Controller)) {
+            if(hit.collider.tag == "Ground" && OVRInput.Get(OVRInput.Button.Two, Controller)) {
                 if (!TeleportMarker.activeSelf) {
                     TeleportMarker.SetActive(true);
                 }

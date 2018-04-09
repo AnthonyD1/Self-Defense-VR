@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DisableRight : MonoBehaviour
+public class DisableUponCollisionRight : MonoBehaviour
 {
     private SphereCollider sphereCollider;
 
