@@ -30,14 +30,6 @@ public class RecoveryBag : MonoBehaviour
         float squareZ = Squaring(bagOriginalPos.z - bagCurrentPos.position.z);
         float mag = Mathf.Sqrt(squareX + squareZ);
 
-        /*if(bagCurrentPos.position.x < 0.07 && bagCurrentPos.position.z < 0.25 && timer > 5)
-        {
-            bagBody.position = bagOriginalPos;
-            bagBody.velocity = new Vector3(0, 0, 0);
-            timer = 0;
-        }
-        */
-
         if (bagCurrentPos.position.x != bagOriginalPos.x)
         {
             rePos.x = (bagOriginalPos.x - bagCurrentPos.position.x) / mag;
