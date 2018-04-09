@@ -5,6 +5,7 @@ using UnityEngine;
 public class AudioPlay : MonoBehaviour {
 
     // keeps the audio from continuing to play once after hitting the object
+    public AudioClip HapticFeedback;
     private bool hasPlayed = false; 
     private AudioSource punchSound;
 
@@ -21,6 +22,16 @@ public class AudioPlay : MonoBehaviour {
         {
             punchSound.Play();
             hasPlayed = true;
+
+            //get haptics in either the right or left hand
+            OVRHapticsClip hapticsClip = new OVRHapticsClip(HapticFeedback);
+
+            if (collision.gameObject.CompareTag("leftHand")) {
+               OVRHaptics.LeftChannel.Preempt(hapticsClip);
+            }
+            else {
+                OVRHaptics.RightChannel.Preempt(hapticsClip);
+            }
         }
     }
 

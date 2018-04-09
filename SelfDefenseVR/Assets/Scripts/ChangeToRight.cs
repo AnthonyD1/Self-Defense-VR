@@ -10,6 +10,7 @@ public class ChangeToRight : MonoBehaviour {
     private Animator BorisAnimator;
     private AudioSource punchSound;
     public AudioClip HapticFeedback;
+    public AudioClip BorisVoice;
     private bool hasPlayed = false;
 
 
@@ -43,6 +44,7 @@ public class ChangeToRight : MonoBehaviour {
 
             BorisAnimator.SetBool("HitLeftPad", false);
             hasPlayed = false;
+            punchSound.PlayOneShot(BorisVoice);
         }
     }
 }

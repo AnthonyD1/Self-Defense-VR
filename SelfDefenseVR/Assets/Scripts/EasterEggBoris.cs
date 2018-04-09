@@ -6,7 +6,7 @@ public class EasterEggBoris : MonoBehaviour {
 
     private int hits = 0;
     public GameObject Boris;
-    private GameObject BorisHead;
+    private GameObject BorisHeadBox;
     private AudioSource Squake;
 
     private void Awake()
@@ -16,7 +16,9 @@ public class EasterEggBoris : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        Squake.Play();
+        if (hits <= 10) {
+            Squake.Play();
+        } 
     }
 
     private void OnTriggerExit(Collider other)
@@ -26,7 +28,8 @@ public class EasterEggBoris : MonoBehaviour {
         {
             Rigidbody BorisBody = Boris.AddComponent<Rigidbody>();
             BorisBody.useGravity = false;
-            BoxCollider BorisHeadBox = BorisHead.GetComponent<BoxCollider>();
+            BorisBody.mass = 0.5f;
+            BoxCollider BorisHeadBox = GetComponent<BoxCollider>();
             BorisHeadBox.isTrigger = false;
         }
     }

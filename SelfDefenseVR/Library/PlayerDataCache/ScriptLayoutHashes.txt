@@ -10,7 +10,7 @@ Assets/Scenes/UppercutTutorial.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OvrAvatarBody
 a935519ff56e5eee54d08ee4da0929a0 Assembly-CSharp.dll:.OVRMixedRealityCaptureSettings
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DisableRight
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DisableUponCollisionRight
 7df47d262399a6f845c2ed06b92cba9b Assembly-CSharp.dll:.OVRCameraRig
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 dbc29a6f2739d277c10da432d73adb6d UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -25,6 +25,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 31aaf521b3ef8699466676591ea0efd4 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 bfddcc339fade781f72a7bb9403d51f3 Assembly-CSharp.dll:.OVRGazePointer
+8a0f06accf7405e70d6ae5dc28c15a54 Assembly-CSharp.dll:.Drill2Logic
 5979728add95abdc642051d92f726e95 Assembly-CSharp.dll:.OVRDebugHeadController
 09da61ba0ef26d77645f23cec252b635 Assembly-CSharp.dll:.OVRManager
 069dbb2201dc5bbfc5610a4e530f0cd0 Assembly-CSharp.dll:.OvrAvatarRenderComponent
@@ -145,7 +146,7 @@ a97206b1f732dc0aa9b23a14352f4399 Assembly-CSharp.dll:.OVRPlatformMenu
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OVRDebugInfo
 069dbb2201dc5bbfc5610a4e530f0cd0 Assembly-CSharp.dll:.OvrAvatarSkinnedMeshRenderPBSComponent
 2a8b7a708153409b1997436894bcbf88 Assembly-CSharp.dll:.ChangeToRight
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DisableUponCollision
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DisableUponCollisionLeft
 9a93f748b7c6fda90f20cf8d995df907 Assembly-CSharp.dll:.OVRResetOrientation
 4b21a475fcdbf93662b1f31c2977c8f8 Assembly-CSharp.dll:Oculus.Platform.VoipAudioSourceHiLevel
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BagLimit
@@ -156,7 +157,7 @@ c4b30debd1f401dfdceec8e9aef60b82 Assembly-CSharp.dll:.Teleporter
 ccd25ccca39fd5159c3471f7762e1ced Assembly-CSharp.dll:.OVRMonoscopic
 74a6fefe8bd94289ab461e70916d7ac3 Assembly-CSharp.dll:.OVRGrabbable
 1e042027c649b7b536a46a4e0335362a Assembly-CSharp.dll:.OVRCubemapCapture
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.PathCollisionAlgorithm
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DisableAllExpectFirst
 9a93f748b7c6fda90f20cf8d995df907 Assembly-CSharp.dll:.OVRModeParms
 7da42ff76b471a89ac72bc31d7c7ad6d Assembly-CSharp.dll:.OVRGearVrControllerTest
 794fafc549057a72705d2401616e50a9 Assembly-CSharp.dll:.RemoteLoopbackManager
@@ -206,6 +207,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 1a5e432b09bf154dd33c7153b667a205 Assembly-CSharp.dll:UnityEngine.EventSystems.OVRPhysicsRaycaster
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 7e926316ce20e4d45cb9a9aebc6e79e9 Assembly-CSharp.dll:.OVRGridCube
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.AudioPlay
 069dbb2201dc5bbfc5610a4e530f0cd0 Assembly-CSharp.dll:.OvrAvatarSkinnedMeshRenderComponent
 a8ed45ab553b07236625df6cc6ac449c Assembly-CSharp.dll:.OVRLint
 715ee802f49103c54cba7971ac57cac0 Assembly-CSharp.dll:UnityEngine.EventSystems.OVRInputModule
