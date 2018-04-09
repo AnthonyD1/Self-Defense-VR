@@ -4250,7 +4250,7 @@ MonoBehaviour:
   LeftPath: {fileID: 2063692833}
   RightPath: {fileID: 1824634505}
   Boris: {fileID: 32599554}
-  HapticFeedback: {fileID: 8300000, guid: a116ac5a735f00d49bee9e00cac09634, type: 3}
+  HapticFeedback: {fileID: 8300000, guid: 905c580e8c9e8ea4c8fe3ab59468f879, type: 3}
 --- !u!1 &1172052554
 GameObject:
   m_ObjectHideFlags: 0
@@ -5312,7 +5312,7 @@ MonoBehaviour:
   LeftPath: {fileID: 2063692833}
   RightPath: {fileID: 1824634505}
   Boris: {fileID: 32599554}
-  HapticFeedback: {fileID: 8300000, guid: a116ac5a735f00d49bee9e00cac09634, type: 3}
+  HapticFeedback: {fileID: 8300000, guid: 905c580e8c9e8ea4c8fe3ab59468f879, type: 3}
 --- !u!1 &1474738018
 GameObject:
   m_ObjectHideFlags: 0

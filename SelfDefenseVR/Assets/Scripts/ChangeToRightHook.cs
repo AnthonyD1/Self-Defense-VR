@@ -28,7 +28,7 @@ public class ChangeToRightHook : MonoBehaviour {
 
         OVRHapticsClip hapticsClip = new OVRHapticsClip(HapticFeedback);
         if (other.gameObject.CompareTag("leftHand")) {
-            OVRHaptics.RightChannel.Preempt(hapticsClip);
+            OVRHaptics.LeftChannel.Preempt(hapticsClip);
         }
     }
 
