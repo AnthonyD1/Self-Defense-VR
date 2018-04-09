@@ -4297,6 +4297,7 @@ MonoBehaviour:
   LeftPath: {fileID: 715892860}
   RightPath: {fileID: 275224545}
   Boris: {fileID: 32599554}
+  HapticFeedback: {fileID: 8300000, guid: a116ac5a735f00d49bee9e00cac09634, type: 3}
 --- !u!82 &1167682437
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4832,8 +4833,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1306031003}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.98, y: 3.5680008, z: 0.37599945}
-  m_LocalScale: {x: 6.25, y: 0.8, z: 1.6}
+  m_LocalPosition: {x: 0, y: 9.11, z: 0.37599945}
+  m_LocalScale: {x: 1, y: 12, z: 1}
   m_Children: []
   m_Father: {fileID: 1461694668}
   m_RootOrder: 4
@@ -5200,6 +5201,7 @@ MonoBehaviour:
   LeftPath: {fileID: 715892860}
   RightPath: {fileID: 275224545}
   Boris: {fileID: 32599554}
+  HapticFeedback: {fileID: 8300000, guid: a116ac5a735f00d49bee9e00cac09634, type: 3}
 --- !u!82 &1464411706
 AudioSource:
   m_ObjectHideFlags: 0

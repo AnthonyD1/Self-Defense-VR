@@ -136,7 +136,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 e260426351ec92be2f530452a4fbec58 Assembly-CSharp.dll:.OVROverlay
-7bf4c0df1720bbfe84268257857189fa Assembly-CSharp.dll:.ChangeToLeft
+2a8b7a708153409b1997436894bcbf88 Assembly-CSharp.dll:.ChangeToLeft
 553028ff2845bac843ab4c26e781c024 Assembly-CSharp.dll:.OVRProgressIndicator
 a97206b1f732dc0aa9b23a14352f4399 Assembly-CSharp.dll:.OVRPlatformMenu
 13a6a1a75679b3c0344b1b6c7e825e34 Assembly-CSharp.dll:.OvrAvatarComponent
@@ -144,7 +144,7 @@ a97206b1f732dc0aa9b23a14352f4399 Assembly-CSharp.dll:.OVRPlatformMenu
 8a0f06accf7405e70d6ae5dc28c15a54 Assembly-CSharp.dll:.Drill1Logic
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OVRDebugInfo
 069dbb2201dc5bbfc5610a4e530f0cd0 Assembly-CSharp.dll:.OvrAvatarSkinnedMeshRenderPBSComponent
-7bf4c0df1720bbfe84268257857189fa Assembly-CSharp.dll:.ChangeToRight
+2a8b7a708153409b1997436894bcbf88 Assembly-CSharp.dll:.ChangeToRight
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DisableUponCollision
 9a93f748b7c6fda90f20cf8d995df907 Assembly-CSharp.dll:.OVRResetOrientation
 4b21a475fcdbf93662b1f31c2977c8f8 Assembly-CSharp.dll:Oculus.Platform.VoipAudioSourceHiLevel
@@ -174,11 +174,13 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
+03bf9eac3439f7652fa700e744454902 Assembly-CSharp.dll:.EasterEggBoris
 7b7745d8d1ab7fe13f98bfffbf52c18d Assembly-CSharp.dll:.OVRWaitCursor
 9aa9e298313863391d9716ab1d949fa0 Assembly-CSharp.dll:.OvrAvatar
 5e1701ec82b76ba237999557f0b0e744 Assembly-CSharp.dll:.OvrAvatarRemoteDriver
 ccd25ccca39fd5159c3471f7762e1ced Assembly-CSharp.dll:.OVRChromaticAberration
 3390da0fa445ab5d676b24efb56cf5c0 Assembly-CSharp.dll:.OVRSceneSampleController
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SceneChange
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OvrAvatarSettingsEditor
 069dbb2201dc5bbfc5610a4e530f0cd0 Assembly-CSharp.dll:.OvrAvatarProjectorRenderComponent
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
@@ -195,7 +197,7 @@ e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
 6de6070780d7efa822923e689e617f4c Assembly-CSharp.dll:.OvrAvatarMeshInstance
-7bf4c0df1720bbfe84268257857189fa Assembly-CSharp.dll:.ChangeToRightHook
+2a8b7a708153409b1997436894bcbf88 Assembly-CSharp.dll:.ChangeToRightHook
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
@@ -210,6 +212,5 @@ a8ed45ab553b07236625df6cc6ac449c Assembly-CSharp.dll:.OVRLint
 584795015275d7765225ad872c0e8bd8 Assembly-CSharp.dll:.OVRGrabber
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OvrAvatarHand
 558ebdd5c791d30ce7c6bd84adf7245b Assembly-CSharp.dll:.PlayerController
-7bf4c0df1720bbfe84268257857189fa Assembly-CSharp.dll:.ChangeToLeftHook
+2a8b7a708153409b1997436894bcbf88 Assembly-CSharp.dll:.ChangeToLeftHook
 85945c52833a42f4c8ccdc8b47380cb2 Assembly-CSharp.dll:Oculus.Platform.CallbackRunner
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SceneChange

@@ -9,6 +9,7 @@ public class ChangeToLeftHook : MonoBehaviour {
     public GameObject Boris;
     private Animator BorisAnimator;
     private AudioSource punchSound;
+    public AudioClip HapticFeedback;
     private bool hasPlayed = false;
 
 
@@ -23,6 +24,11 @@ public class ChangeToLeftHook : MonoBehaviour {
         if (hasPlayed == false) {
             punchSound.Play();
             hasPlayed = true;
+        }
+
+        OVRHapticsClip hapticsClip = new OVRHapticsClip(HapticFeedback);
+        if (other.gameObject.CompareTag("rightHand")) {
+            OVRHaptics.RightChannel.Preempt(hapticsClip);
         }
     }
 
