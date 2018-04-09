@@ -3,17 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioPlay : MonoBehaviour {
-    
-    private bool hasPlayed = false;
+
+    // keeps the audio from continuing to play once after hitting the object
+    private bool hasPlayed = false; 
     private AudioSource punchSound;
 
     // Use this for initialization
     void Awake () {
+        // grabs the audio source
         punchSound = this.gameObject.GetComponent<AudioSource>();
 	}
 
     private void OnCollisionEnter(Collision collision)
     {
+        // if one of your hands hits the object, then it plays the sound effect
         if((collision.gameObject.CompareTag("rightHand") || collision.gameObject.CompareTag("leftHand")) && !hasPlayed)
         {
             punchSound.Play();
@@ -23,11 +26,7 @@ public class AudioPlay : MonoBehaviour {
 
     private void OnCollisionExit(Collision collision)
     {
+        // once your hand leaves the object, the sound can play again
         if (collision.gameObject.CompareTag("rightHand") || collision.gameObject.CompareTag("leftHand")) hasPlayed = false;
     }
-
-    // Update is called once per frame
-    void Update () {
-		
-	}
 }
