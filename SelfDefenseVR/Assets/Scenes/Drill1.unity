@@ -172,6 +172,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 445c1936a41023a408646e0ebdef9c62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LeftPad: {fileID: 1464411701}
+  RightPad: {fileID: 1167682433}
   path: {fileID: 1061047486}
 --- !u!95 &32599556
 Animator:
@@ -4098,6 +4100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1167682434}
   - component: {fileID: 1167682435}
+  - component: {fileID: 1167682436}
   m_Layer: 0
   m_Name: LeftPadCollider
   m_TagString: Untagged
@@ -4131,6 +4134,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.009, y: 0.007, z: 0.006}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1167682436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1167682433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb98eeb3da4ed9a44b614dd6560d08be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftControllerHit: 0
+  rightControllerHit: 0
 --- !u!1 &1172052554
 GameObject:
   m_ObjectHideFlags: 0
@@ -4889,6 +4905,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1464411702}
   - component: {fileID: 1464411703}
+  - component: {fileID: 1464411704}
   m_Layer: 0
   m_Name: RightPadCollider
   m_TagString: Untagged
@@ -4922,6 +4939,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.009, y: 0.007, z: 0.006}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1464411704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1464411701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb98eeb3da4ed9a44b614dd6560d08be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftControllerHit: 0
+  rightControllerHit: 0
 --- !u!1 &1474738018
 GameObject:
   m_ObjectHideFlags: 0

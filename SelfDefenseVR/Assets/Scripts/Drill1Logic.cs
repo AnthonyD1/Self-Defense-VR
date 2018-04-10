@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Drill1Logic : MonoBehaviour
 {
+    public GameObject LeftPad;
+    public GameObject RightPad;
 
     private Transform[] paths = new Transform[6];
     private Animator BorisAnimator;
@@ -38,7 +40,7 @@ public class Drill1Logic : MonoBehaviour
 
     private void MovesSwitch()
     {
-
+        // decide which animation to play next
         if (movesCount == moves.Length - 1) {
             BorisAnimator.SetBool(moves[movesCount], false);
             BorisAnimator.SetBool(moves[0], true);
@@ -51,7 +53,7 @@ public class Drill1Logic : MonoBehaviour
 
         movesCount++;
 
-
+        // decide which punch path to show next
         if (pathCount < paths.Length - 1) {
             paths[pathCount].gameObject.SetActive(false);
             paths[pathCount + 1].gameObject.SetActive(true);
@@ -64,14 +66,21 @@ public class Drill1Logic : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void Update()
     {
         // if you have reached the end of the array of animations
         if (movesCount > moves.Length - 1) movesCount = 0;
 
-        if (other.gameObject.CompareTag("leftHand") && moves[movesCount][0] == 'L') {
+        // Get Hook edge case
+        if (LeftPad.GetComponent<HitOrNah>().rightControllerHit && moves[movesCount] == "RightHook") {
             MovesSwitch();
-        } else if (other.gameObject.CompareTag("rightHand") && moves[movesCount][0] == 'R') {
+        }// get hook edge case
+        else if(RightPad.GetComponent<HitOrNah>().leftControllerHit && moves[movesCount] == "LeftHook") {
+            MovesSwitch();
+        }
+        else if (LeftPad.GetComponent<HitOrNah>().leftControllerHit && moves[movesCount][0] == 'L') {
+            MovesSwitch();
+        } else if (RightPad.GetComponent<HitOrNah>().rightControllerHit && moves[movesCount][0] == 'R') {
             MovesSwitch();
         }
     }
