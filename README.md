@@ -14,3 +14,7 @@ Welcome to Self Defense VR!
   After cloning the repository to your computer and downloading the above assets, open one of the scenes in Unity and build the project being sure to add every scene besides "Animation Testing" to the build manager. Once this step is complete, feel free to build and enjoy our VR experience!
   
   To view our project poster follow this link: https://docs.google.com/presentation/d/1kuFngXGH1fza6Dajrrn5vswwG_kJHTLl748xnCjpy7E/edit?usp=sharing
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=nsHNmOCuyps
+" target="_blank"><img src="http://img.youtube.com/vi/nsHNmOCuyps/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
