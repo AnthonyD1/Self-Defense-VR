@@ -3,13 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BagLimit : MonoBehaviour {
+    // stores the position of the frame's y
     private float yPos;
+	
+    // rigidBody of the hanging punching bag
     private Rigidbody bagBody;
-    private bool reversed = false; // tracks whether the punching bag is going down or not
+	
+    // tracks whether the punching bag is going down or not
+    private bool reversed = false;
 
-	// Use this for initialization
-	void Awake () {
-
+    // grabs the y axis of the hanging punching bag
+    void Awake () {
         yPos = GameObject.Find("Cylinder.003").GetComponent<Transform>().position.y;
         bagBody = this.gameObject.GetComponent<Rigidbody>();
 
@@ -29,13 +33,8 @@ public class BagLimit : MonoBehaviour {
 
         } else if (this.gameObject.GetComponent<Transform>().position.y < yPos && reversed)
         {
-            // 
+            // when the bag goes under the frame the bag can be pushed back if it goes above
             reversed = false;
         }
     }
-
-    // Update is called once per frame
-    void Update () {
-		
-	}
 }
