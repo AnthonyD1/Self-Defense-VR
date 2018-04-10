@@ -3,14 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HitOrNah : MonoBehaviour {
+    //Creates booleans that helps the DisableUponCollision script understand when which hand enters the corresponding pad
     public bool leftControllerHit;
     public bool rightControllerHit;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-
+    //When the pad is entered by the specified hand change the corresponding hands boolean to true
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("leftHand")) {
@@ -20,7 +17,8 @@ public class HitOrNah : MonoBehaviour {
             rightControllerHit = true;
         }
     }
-
+    
+    //When the pad is exited by the specified hand change the corresponding hands boolean to false
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("leftHand")) {
@@ -29,8 +27,4 @@ public class HitOrNah : MonoBehaviour {
             rightControllerHit = false;
         }
     }
-    // Update is called once per frame
-    void Update () {
-		
-	}
 }
