@@ -8,19 +8,18 @@ public class DisableAllExceptFirst : MonoBehaviour
     // Use this for initialization
     private void Awake()
     {
-        sphereColliders = GetComponentsInChildren<SphereCollider>(); // initialize the array bro
+        sphereColliders = GetComponentsInChildren<SphereCollider>(); // initialize the array
     }
+    
     void Start()
     {
-        
-
         // disable all colliders except first sphere
         DisableAllSphereCollidersExceptFirst();
     }
 
+    //Makes the user go through the first one in order to "collect" the spheres
     void DisableAllSphereCollidersExceptFirst()
     {
-
         for (int i = 0; i < sphereColliders.Length; i++)
         {
             if (i == 0)
@@ -32,7 +31,6 @@ public class DisableAllExceptFirst : MonoBehaviour
                 sphereColliders[i].enabled = false;
             }
         }
-       
     }
 
     private void OnEnable()
@@ -41,23 +39,5 @@ public class DisableAllExceptFirst : MonoBehaviour
             sphereColliders[i].gameObject.SetActive(true);
         }
         DisableAllSphereCollidersExceptFirst();
-    }
-    // Update is called once per frame
-    void Update ()
-    {
-  
- 
-	}
-
-    
-    IEnumerator Reset()
-    {
-        yield return new WaitForSecondsRealtime(.5f);
-        for (int i = 0; i < sphereColliders.Length; i++)
-        {
-            sphereColliders[i].gameObject.SetActive(true);
-        }
-        DisableAllSphereCollidersExceptFirst();
-    }
-    
+    }   
 }
