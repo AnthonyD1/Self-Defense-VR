@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Drill3Logic : MonoBehaviour
 {
+    /*
+    Drill3Logic is a copy and paste of Drill1Logic.
+    Everything about the two scripts is identical besides the moves array.
+    The order of the moves array dictates the paths and moves that are displayed in the drill.
+    */
     public GameObject LeftPad;
     public GameObject RightPad;
 
