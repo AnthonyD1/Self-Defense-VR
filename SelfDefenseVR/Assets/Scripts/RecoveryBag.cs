@@ -14,8 +14,10 @@ public class RecoveryBag : MonoBehaviour
     // grabs the rigidbody component of the punching bag
     private Rigidbody bagBody;
 
+    
     void Awake()
     {
+        // initializes the transforms and of the bag and grabs the original position of the bag
         bagOriginalPos = this.gameObject.GetComponent<Transform>().position;
         bagCurrentPos = this.gameObject.GetComponent<Transform>();
         bagBody = this.gameObject.GetComponent<Rigidbody>();
@@ -24,7 +26,7 @@ public class RecoveryBag : MonoBehaviour
 
     private float Squaring(float x)
     {
-        // square x
+        // return the x squared
         return Mathf.Pow(x, 2);
     }
 
