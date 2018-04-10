@@ -6,9 +6,13 @@ public class DisableAllExceptFirst : MonoBehaviour
     private SphereCollider[] sphereColliders;
 
     // Use this for initialization
-    void Start()
+    private void Awake()
     {
         sphereColliders = GetComponentsInChildren<SphereCollider>(); // initialize the array bro
+    }
+    void Start()
+    {
+        
 
         // disable all colliders except first sphere
         DisableAllSphereCollidersExceptFirst();

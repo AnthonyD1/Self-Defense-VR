@@ -21,7 +21,8 @@ public class BorisHurtSound : MonoBehaviour {
 
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.CompareTag("rightHand") || collision.gameObject.CompareTag("leftHand")) {
+        if (collision.gameObject.CompareTag("rightHand") || collision.gameObject.CompareTag("leftHand") || collision.gameObject.CompareTag("Katana")) {
+            BorisHurt.Stop();
             if (hit == 1) {
                 BorisHurt.PlayOneShot(Ow1);
                 hit++;

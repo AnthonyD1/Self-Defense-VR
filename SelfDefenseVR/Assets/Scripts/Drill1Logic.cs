@@ -11,14 +11,34 @@ public class Drill1Logic : MonoBehaviour
     private Animator BorisAnimator;
     public GameObject path;
 
-    
+    public AudioSource Boris;
+    public AudioClip leftJab;
+    public AudioClip rightJab;
+    public AudioClip leftHook;
+    public AudioClip rightHook;
+    public AudioClip leftUpperCut;
+    public AudioClip rightUpperCut;
+    public AudioClip HapticFeedback;
+    public AudioClip PunchSound;
+
+    private AudioClip[] clips = new AudioClip[6];
     private int movesCount;
     private int pathCount;
-    private string[] moves = { "LeftJab", "RightJab", "LeftHook", "RightHook", "LeftUpperCut", "RightUpperCut" };
+    private string[] moves = { "LeftJab", "RightJab","LeftHook", "RightHook", "LeftUpperCut", "RightUpperCut"};
 
 
     private void Awake()
     {
+
+        // build the audioclip array
+        Boris = GetComponent<AudioSource>();
+        clips[0] = leftJab;
+        clips[1] = rightJab;
+        clips[2] = leftHook;
+        clips[3] = rightHook;
+        clips[4] = leftUpperCut;
+        clips[5] = rightUpperCut;
+
         //paths = GameObject.Find("Path").GetComponentsInChildren<Transform>(); // initialize the paths array
         Transform[] temp;
         temp = path.GetComponentsInChildren<Transform>();
@@ -30,29 +50,35 @@ public class Drill1Logic : MonoBehaviour
                 i++;
             }
         }
-        paths[0].gameObject.SetActive(true);
+        Activeness(moves.Length - 1, 0);
         BorisAnimator = GetComponent<Animator>();
         movesCount = 0;
         pathCount = 0;
-
-
     }
+
+
 
     private void MovesSwitch()
     {
+        // make punch sound
+        Boris.PlayOneShot(PunchSound);
+
         // decide which animation to play next
         if (movesCount == moves.Length - 1) {
+            Boris.PlayOneShot(clips[0]);
             BorisAnimator.SetBool(moves[movesCount], false);
             BorisAnimator.SetBool(moves[0], true);
-
+            Activeness(movesCount, 0);
         } else {
-
+            Boris.PlayOneShot(clips[movesCount + 1]);
             BorisAnimator.SetBool(moves[movesCount], false);
             BorisAnimator.SetBool(moves[movesCount + 1], true);
+            Activeness(movesCount, movesCount + 1);
         }
-
+        
         movesCount++;
 
+        /*
         // decide which punch path to show next
         if (pathCount < paths.Length - 1) {
             paths[pathCount].gameObject.SetActive(false);
@@ -64,23 +90,50 @@ public class Drill1Logic : MonoBehaviour
             paths[0].gameObject.SetActive(true);
             pathCount = 0;
         }
+        */
+
+    }
+
+    private void Activeness(int current, int next)
+    {
+        foreach (Transform p in paths) {
+            if (p.gameObject.name == moves[current]) {
+                p.gameObject.SetActive(false);
+            }
+
+            if (p.gameObject.name == moves[next]) {
+                p.gameObject.SetActive(true);
+            }
+        }
     }
 
     private void Update()
     {
         // if you have reached the end of the array of animations
         if (movesCount > moves.Length - 1) movesCount = 0;
-
+        OVRHapticsClip hapticsClip = new OVRHapticsClip(HapticFeedback);
         // Get Hook edge case
         if (LeftPad.GetComponent<HitOrNah>().rightControllerHit && moves[movesCount] == "RightHook") {
+            // haptics
+            OVRHaptics.RightChannel.Preempt(hapticsClip);
+
             MovesSwitch();
         }// get hook edge case
         else if(RightPad.GetComponent<HitOrNah>().leftControllerHit && moves[movesCount] == "LeftHook") {
+            // haptics
+            OVRHaptics.LeftChannel.Preempt(hapticsClip);
+
             MovesSwitch();
         }
         else if (LeftPad.GetComponent<HitOrNah>().leftControllerHit && moves[movesCount][0] == 'L') {
+            // haptics
+            OVRHaptics.LeftChannel.Preempt(hapticsClip);
+
             MovesSwitch();
         } else if (RightPad.GetComponent<HitOrNah>().rightControllerHit && moves[movesCount][0] == 'R') {
+            // haptics
+            OVRHaptics.RightChannel.Preempt(hapticsClip);
+
             MovesSwitch();
         }
     }

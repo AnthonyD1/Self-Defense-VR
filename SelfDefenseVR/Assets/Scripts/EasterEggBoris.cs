@@ -9,6 +9,7 @@ public class EasterEggBoris : MonoBehaviour {
     private GameObject BorisHeadBox;
     private AudioSource Squake;
 
+
     private void Awake()
     {
         Squake = GetComponent<AudioSource>();
