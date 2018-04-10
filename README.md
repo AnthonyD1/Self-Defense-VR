@@ -5,8 +5,6 @@ Welcome to Self Defense VR!
   
   There are assests to this project that we did not make but that we downloaded for free from the Unity Asset Store. In order to correctly clone, compile, and run this repository, you will need the following free assets:
   
-  Bunny NunChuck: https://goo.gl/4AkEtk
-  
   Boris the CageFighter: https://goo.gl/rwdPAK
   
   Fighting Motions Vol. 1: https://goo.gl/4hc27U
