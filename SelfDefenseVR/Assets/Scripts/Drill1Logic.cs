@@ -24,12 +24,12 @@ public class Drill1Logic : MonoBehaviour
     private AudioClip[] clips = new AudioClip[6];
     private int movesCount;
     private int pathCount;
+    // These are the moves that the drill will feature
     private string[] moves = { "LeftJab", "RightJab","LeftHook", "RightHook", "LeftUpperCut", "RightUpperCut"};
 
 
     private void Awake()
     {
-
         // build the audioclip array
         Boris = GetComponent<AudioSource>();
         clips[0] = leftJab;
@@ -39,7 +39,8 @@ public class Drill1Logic : MonoBehaviour
         clips[4] = leftUpperCut;
         clips[5] = rightUpperCut;
 
-        //paths = GameObject.Find("Path").GetComponentsInChildren<Transform>(); // initialize the paths array
+        // initialize the paths array
+        //paths = GameObject.Find("Path").GetComponentsInChildren<Transform>();
         Transform[] temp;
         temp = path.GetComponentsInChildren<Transform>();
         int i = 0;
@@ -94,6 +95,7 @@ public class Drill1Logic : MonoBehaviour
 
     }
 
+    //Sets current punch path to false and next path to true
     private void Activeness(int current, int next)
     {
         foreach (Transform p in paths) {
@@ -125,12 +127,14 @@ public class Drill1Logic : MonoBehaviour
 
             MovesSwitch();
         }
+        // Checks so that the left controller hits the left pad and that the move that is displayed is meant for the left controller
         else if (LeftPad.GetComponent<HitOrNah>().leftControllerHit && moves[movesCount][0] == 'L') {
             // haptics
             OVRHaptics.LeftChannel.Preempt(hapticsClip);
 
             MovesSwitch();
-        } else if (RightPad.GetComponent<HitOrNah>().rightControllerHit && moves[movesCount][0] == 'R') {
+        } // Checks so that the left controller hits the left pad and that the move that is displayed is meant for the left controller
+        else if (RightPad.GetComponent<HitOrNah>().rightControllerHit && moves[movesCount][0] == 'R') {
             // haptics
             OVRHaptics.RightChannel.Preempt(hapticsClip);
 
