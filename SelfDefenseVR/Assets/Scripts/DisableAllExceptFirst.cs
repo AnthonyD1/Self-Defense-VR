@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class DisableAllExpectFirst : MonoBehaviour
+public class DisableAllExceptFirst : MonoBehaviour
 {
     private SphereCollider[] sphereColliders;
 
@@ -16,6 +16,7 @@ public class DisableAllExpectFirst : MonoBehaviour
 
     void DisableAllSphereCollidersExceptFirst()
     {
+
         for (int i = 0; i < sphereColliders.Length; i++)
         {
             if (i == 0)
@@ -30,16 +31,21 @@ public class DisableAllExpectFirst : MonoBehaviour
        
     }
 
-	// Update is called once per frame
+    private void OnEnable()
+    {
+        for (int i = 0; i < sphereColliders.Length; i++) {
+            sphereColliders[i].gameObject.SetActive(true);
+        }
+        DisableAllSphereCollidersExceptFirst();
+    }
+    // Update is called once per frame
     void Update ()
     {
-
-        if (sphereColliders.Length != 0 && !sphereColliders[sphereColliders.Length - 1].gameObject.activeSelf)
-        {
-            StartCoroutine("Reset");
-        }
+  
+ 
 	}
 
+    
     IEnumerator Reset()
     {
         yield return new WaitForSecondsRealtime(.5f);
@@ -49,4 +55,5 @@ public class DisableAllExpectFirst : MonoBehaviour
         }
         DisableAllSphereCollidersExceptFirst();
     }
+    
 }

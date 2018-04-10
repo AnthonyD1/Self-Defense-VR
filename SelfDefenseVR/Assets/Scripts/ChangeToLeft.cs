@@ -12,6 +12,7 @@ public class ChangeToLeft : MonoBehaviour {
     public AudioClip HapticFeedback;
     public AudioClip BorisVoice;
     private bool hasPlayed = false;
+    private GameObject path;
 
 
     private void Awake()

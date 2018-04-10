@@ -28,7 +28,6 @@ public class Drill1Logic : MonoBehaviour
                 i++;
             }
         }
-
         paths[0].gameObject.SetActive(true);
         BorisAnimator = GetComponent<Animator>();
         movesCount = 0;
