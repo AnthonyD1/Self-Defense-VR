@@ -2,7 +2,7 @@
 
 ## Table of Contents:
 - [Introduction](#introduction)
-- [Video Demo](#video demo)
+- [Video Demo](#demo)
 - [Poster](#poster)
 - [Resources](#resources)
 
@@ -14,7 +14,7 @@ Welcome to Self Defense VR!
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=nsHNmOCuyps
 " target="_blank"><img src="http://img.youtube.com/vi/nsHNmOCuyps/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="500" height="500" border="10" /></a>
+alt="IMAGE ALT TEXT HERE" width="500" height="500" border="1" /></a>
   
   There are assests to this project that we did not make but that we downloaded for free from the Unity Asset Store. In order to correctly clone, compile, and run this repository, you will need the following free assets:
   
