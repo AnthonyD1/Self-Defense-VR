@@ -1,5 +1,5 @@
 # Self-Defense-VR
-A virtual Self-Defense experience geared towards those who do not know much about Self-defense and wish to learn. **Disclaimer**: This is not meant to be a replacement of proper Self-Defense education, it is purely suplimentary and for educational purposes only. Please seek a qualified professional if Self-Defense advice is needed.
+A virtual Self-Defense experience geared towards those who do not know much about Self-defense and wish to learn. **Disclaimer**: This is not meant to be a replacement of proper Self-Defense education, it is purely supplementary and for educational purposes only. Please seek a qualified professional if self defense advice is needed.
 
 ## Table of Contents:
 - [Introduction](#introduction)
