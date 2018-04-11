@@ -63,6 +63,7 @@ To play our game you have two options:
 1. The player can currently walk on top of the standing punching bag. This can be disorienting for new users. To avoid, try to use teleportation exclusively and walking locomotion for micro-adjustments of position.
 2. There are issues with audio clips overlapping with each other when the player interacts with Boris. This is most common when the user is colliding with his pads.
 3. The user can currently teleport to a wall and stick their head through the wall and see the outside. To avoid this a collider could be added to the player's head.
+4. There was an issue where if the user teleported too close to Boris, he would push the player back. The issue was with the box colliders on Boris and the colliders on the player model. We reduced the radius of the player model in the PlayerController prefab to try and solve this. For the most part it seems to work, but at times, if the user is very close, Boris will push them back a bit.
 
 ## Resources
   There are assests to this project that we did not make but that we downloaded for free from the Unity Asset Store. In order to correctly clone, compile, and run this repository, you will need the following free assets (they are included in our repository):
