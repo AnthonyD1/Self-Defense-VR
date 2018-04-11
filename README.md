@@ -40,6 +40,7 @@ To play our game you have two options:
 - Open the project with unity
 - Within Unity, run the game from any game scene
 - Make sure your Oculus Rift is connected and functional
+- Alternatively, you could build the all the scenes (make sure all scenes except "Animating Testing"are in the build manager)
 
 2. Play the executable (allows user to run an executable without needing the whole repository)
 - Download the newest release of our project from the "releases" tab of Github
