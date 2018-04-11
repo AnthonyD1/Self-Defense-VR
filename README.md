@@ -31,7 +31,7 @@ Please click on the image below to see our full poster presentation to get a gen
 You will need:
 - Unity 2017.3.1
 - Visual Studios 2017 (could opt for a different text editor of you choosing)
-- The free assets and libraries specified under Resources(#resources)
+- The free assets and libraries specified under Resources
 - Oculus Rift
 
 To play our game you have two options:
