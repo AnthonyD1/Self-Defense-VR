@@ -51,15 +51,13 @@ To play our game you have two options:
 - Launch the .exe
 
 ## Controls
-### Movement
+#### Movement
 - Use Gaze Teleport: hold the "B" button on the right Touch controller, look at where you want to teleport (there will be a reticle) and pull trigger to teleport.
 - Walking locomotion: use the left thumbstick to move about, and the right Thumbstick to rotate head 45 degrees left or right.
 
-### Fist
+#### Fist
 To make a fist hold the Trigger and Grip buttons, then place your thumb over the "A", "b" or Thumbstick button. Do this with both cotnrollers.
 
-### HeadTracking
-The user can move their head around to look around the room.
 
 ## Bugs
 1. The player can currently walk on top of the standing punching bag. This can be disorienting for new users. To avoid, try to use teleportation exclusively and walking locomotion for micro-adjustments of position.
