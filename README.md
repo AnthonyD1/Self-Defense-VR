@@ -31,22 +31,22 @@ Please click on the image below to see our full poster presentation to get a gen
 You will need:
 - Unity 2017.3.1
 - Visual Studios 2017 (could opt for a different text editor of you choosing)
-- The free assets and libraries specified under Resources
+- The free assets and libraries specified under [Resources](#resources)
 - Oculus Rift
 
 To play our game you have two options:
 1. Clone our repository (allows user to modify code and work on project)
--- Clone the repository like you would any other
--- Open the project with unity
--- Within Unity, run the game from any game scene
--- Make sure your Oculus Rift is connected and functional
--- Alternatively, you could build the all the scenes (make sure all scenes except "Animating Testing"are in the build manager)
+- Clone the repository like you would any other
+- Open the project with unity
+- Within Unity, run the game from any game scene
+- Make sure your Oculus Rift is connected and functional
+- Alternatively, you could build the all the scenes (make sure all scenes except "Animating Testing"are in the build manager)
 
 2. Play the executable (allows user to run an executable without needing the whole repository)
--- Download the newest release of our project from the "releases" tab of Github
--- Make sure the .exe, .ddl and zip file are in the same directory
--- unzip the .zip file
--- Launch the .exe
+- Download the newest release of our project from the "releases" tab of Github
+- Make sure the .exe, .ddl and zip file are in the same directory
+- unzip the .zip file
+- Launch the .exe
   
 ## Resources
   There are assests to this project that we did not make but that we downloaded for free from the Unity Asset Store. In order to correctly clone, compile, and run this repository, you will need the following free assets:
