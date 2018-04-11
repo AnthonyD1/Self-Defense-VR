@@ -50,6 +50,9 @@ To play our game you have two options:
 - Launch the .exe
   
 ## Bugs
+1. The player can currently walk on top of the standing punching bag. This can be disorienting for new users. To avoid, try to use teleportation exclusively and walking locomotion for micro-adjustments of position.
+2. There are issues with audio clips overlapping with each other when the player interacts with Boris. This is most common when the user is colliding with his pads.
+3. The user can currently teleport to a wall and stick their head through the wall and see the outside. To avoid this a collider could be added to the player's head.
 
 ## Resources
   There are assests to this project that we did not make but that we downloaded for free from the Unity Asset Store. In order to correctly clone, compile, and run this repository, you will need the following free assets (they are included in our repository):
