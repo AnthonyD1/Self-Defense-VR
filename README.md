@@ -11,10 +11,7 @@ Welcome to Self Defense VR!
   This virtual reality experience was developed by Anthony Delgado Pimental, Jacob Norris, Salem Ozaki, & Jordan Proby with voiceover additions by Paul Demange. This project was created during their time at Cornell College during their Computer Science Topics Class on Virtual Reality. This VR experience was created so that aspiring self defense enthusiasts could practice their skills without having to invest the time or money in a training gym or certified instructor.
   
 ## Demo
-
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=nsHNmOCuyps
-" target="_blank"><img src="http://img.youtube.com/vi/nsHNmOCuyps/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="500" height="500" border="1" /></a>
+[![HUD Demo](http://img.youtube.com/vi/nsHNmOCuyps/0.jpg)](https://youtu.be/nsHNmOCuyps)
   
   There are assests to this project that we did not make but that we downloaded for free from the Unity Asset Store. In order to correctly clone, compile, and run this repository, you will need the following free assets:
   
