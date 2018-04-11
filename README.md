@@ -8,11 +8,13 @@
 
 ## Introduction
 Welcome to Self Defense VR! 
-  This virtual reality experience was developed by Anthony Delgado Pimental, Jacob Norris, Salem Ozaki, & Jordan Proby with voiceover additions by Paul Demange. This project was created during their time at Cornell College during their Computer Science Topics Class on Virtual Reality. This VR experience was created so that aspiring self defense enthusiasts could practice their skills without having to invest the time or money in a training gym or certified instructor.
+  This virtual reality experience was developed by Anthony Delgado Pimental, Jacob Norris, Salem Ozaki, & Jordan Proby with voiceover additions by Paul Demange. This project was created during their time at Cornell College for their Computer Science Topics Class on Virtual Reality. This VR experience was created so that aspiring self defense enthusiasts could hopefully practice their skills without having to invest the time or money in a training gym or certified instructor. 
+  This version of the project has limited functionality, but allows the user to run Drills and learn punch movements in various Tutorials. Punches, Hooks, and Uppercuts where the punches implemented.
   
 ## Demo
 [![HUD Demo](http://img.youtube.com/vi/nsHNmOCuyps/0.jpg)](https://youtu.be/nsHNmOCuyps)
   
+## Resources
   There are assests to this project that we did not make but that we downloaded for free from the Unity Asset Store. In order to correctly clone, compile, and run this repository, you will need the following free assets:
   
   Boris the CageFighter: https://goo.gl/rwdPAK
