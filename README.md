@@ -1,17 +1,17 @@
 # Self-Defense-VR
-A virtual Self-Defense experience geared towards those who do not know much about Self-defense and wish to learn. **Disclaimer**: This is not meant to be a replacement of proper Self-Defense education, it is purely supplementary and for educational purposes only. Please seek a qualified professional if self defense advice is needed.
+A virtual self-defense experience geared towards those who do not know much about self-defense and wish to learn. **Disclaimer**: This is not meant to be a replacement of proper self-defense education, it is purely supplementary and for educational purposes only. Please seek a qualified professional if self-defense advice is needed.
 
 ## Table of Contents:
 - [Introduction](#introduction)
 - [Video Demo](#demo)
 - [Poster](#poster)
 - [Setup](#setup)
-- [Known Buggs](#bugs)
+- [Known Bugs](#bugs)
 - [Resources](#resources)
 
 ## Introduction
-Welcome to Self Defense VR! 
-  This virtual reality experience was developed by Anthony Delgado Pimental, Jacob Norris, Salem Ozaki, & Jordan Proby with voiceover additions by Paul Demange. This project was created during their time at Cornell College for their Computer Science Topics Class on Virtual Reality. This VR experience was created so that aspiring self defense enthusiasts could hopefully practice their skills without having to invest the time or money in a training gym or certified instructor. 
+Welcome to Self-Defense VR! 
+  This virtual reality experience was developed by Anthony Delgado Pimental, Jacob Norris, Salem Ozaki, & Jordan Proby with voiceover additions by Paul Demange. This project was created during their time at Cornell College for their Computer Science Topics Class on Virtual Reality. This VR experience was created so that aspiring self-defense enthusiasts could hopefully practice their skills without having to invest the time or money in a training gym or certified instructor. 
   This version of the project has limited functionality, but allows the user to run Drills and learn punch movements in various Tutorials. Punches, Hooks, and Uppercuts where the punches implemented.
   
 ## Demo
@@ -33,7 +33,7 @@ You will need:
 - Unity 2017.3.1
 - Visual Studios 2017 (could opt for a different text editor of you choosing)
 - The free assets and libraries specified under [Resources](#resources)
-- Oculus Rift
+- Oculus Rift and related peripherals
 
 To play our game you have two options:
 1. Clone our repository (allows user to modify code and work on project)
@@ -41,7 +41,7 @@ To play our game you have two options:
 - Open the project with unity
 - Within Unity, run the game from any game scene
 - Make sure your Oculus Rift is connected and functional
-- Alternatively, you could build the all the scenes (make sure all scenes except "Animating Testing"are in the build manager)
+- Alternatively, you could build the all the scenes (make sure all scenes except "Animation Testing"are in the build manager)
 
 2. Play the executable (allows user to run an executable without needing the whole repository)
 - Download the newest release of our project from the "releases" tab of Github
@@ -69,6 +69,6 @@ To play our game you have two options:
   - Simply Download the corresponding packages, then import the .unityPackage files into your project (these will be located inside various files for each package). For a full tutorial see: https://www.youtube.com/watch?v=sxvKGVDmYfY (only watch the parts on the packages).
   
   Teleportation: https://www.youtube.com/watch?v=qjW4_1of7u4
-  - We used this tutorial as the base for out gaze teleportation but heavily modified it to be compatible with Touch controllers.
+  - We used this tutorial as the base for out gaze teleportation but heavily modified it to be compatible with the Oculus' Touch controllers.
 
 
