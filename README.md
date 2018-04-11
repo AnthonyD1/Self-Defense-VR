@@ -49,11 +49,15 @@ To play our game you have two options:
 - Launch the .exe
   
 ## Resources
-  There are assests to this project that we did not make but that we downloaded for free from the Unity Asset Store. In order to correctly clone, compile, and run this repository, you will need the following free assets:
+  There are assests to this project that we did not make but that we downloaded for free from the Unity Asset Store. In order to correctly clone, compile, and run this repository, you will need the following free assets (they are included in our repository):
   
   Boris the CageFighter: https://goo.gl/rwdPAK
   
   Fighting Motions Vol. 1: https://goo.gl/4hc27U
+  
+  Standing Punching bag: https://goo.gl/eqkhHe
+  
+  Speed bag: https://goo.gl/iNSND4
   
   OVR Utilities/Platform/Avatar: https://goo.gl/JNCKUu
   - Simply Download the corresponding packages, then import the .unityPackage files into your project (these will be located inside various files for each package). For a full tutorial see: https://www.youtube.com/watch?v=sxvKGVDmYfY (only watch the parts on the packages).
