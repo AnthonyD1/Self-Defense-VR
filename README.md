@@ -51,12 +51,12 @@ To play our game you have two options:
 - Launch the .exe
 
 ## Controls
-#### Movement
+### Movement
 - Use Gaze Teleport: hold the "B" button on the right Touch controller, look at where you want to teleport (there will be a reticle) and pull trigger to teleport.
 - Walking locomotion: use the left thumbstick to move about, and the right Thumbstick to rotate head 45 degrees left or right.
 
-#### Fist
-To make a fist hold the Trigger and Grip buttons, then place your thumb over the "A", "b" or Thumbstick button. Do this with both cotnrollers.
+### Fist
+-To make a fist hold the Trigger and Grip buttons, then place your thumb over the "A", "b" or Thumbstick button. Do this with both cotnrollers.
 
 
 ## Bugs
