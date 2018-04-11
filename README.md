@@ -49,7 +49,7 @@ To play our game you have two options:
 - unzip the .zip file
 - Launch the .exe
   
-## Known Bugs
+## Bugs
 
 ## Resources
   There are assests to this project that we did not make but that we downloaded for free from the Unity Asset Store. In order to correctly clone, compile, and run this repository, you will need the following free assets (they are included in our repository):
