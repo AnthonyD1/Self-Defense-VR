@@ -24,7 +24,7 @@ This Demo showcases the different features users can experience within our VR pr
 
 ## Poster
 Please visit the link below to see our poster presentation to get a general idea of the functionality of this project.
-![Project Poster](https://github.com/AnthonyD1/Self-Defense-VR/raw/master/Self-Defense%20VR%20Poster.pdf)
+![Project Poster](https://github.com/AnthonyD1/Self-Defense-VR/raw/master/Self-Defense Poster.pdf)
   
 ## Resources
   There are assests to this project that we did not make but that we downloaded for free from the Unity Asset Store. In order to correctly clone, compile, and run this repository, you will need the following free assets:
