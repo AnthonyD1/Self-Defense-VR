@@ -1,5 +1,5 @@
 # Self-Defense-VR
-A virtual Self-Defense experience geared towards those who do not know much about Self-defense and wish to learn. Disclaimer: This is not meant to be a replacement of proper Self-Defense education, it is purely suplimentary and for educational purposes only. Please seek a qualified professional if Self-Defense advice is needed.
+A virtual Self-Defense experience geared towards those who do not know much about Self-defense and wish to learn. **Disclaimer**: This is not meant to be a replacement of proper Self-Defense education, it is purely suplimentary and for educational purposes only. Please seek a qualified professional if Self-Defense advice is needed.
 
 ## Table of Contents:
 - [Introduction](#introduction)
@@ -13,7 +13,18 @@ Welcome to Self Defense VR!
   This version of the project has limited functionality, but allows the user to run Drills and learn punch movements in various Tutorials. Punches, Hooks, and Uppercuts where the punches implemented.
   
 ## Demo
+This Demo showcases the different features users can experience within our VR project. This includes:
+- Trainer voice instructions
+- Paths for punch guidance
+- Ambient/interaction sound for emersion
+- Telelportation or ThumbStick locomotion
+- Animated models for punch instruction
+
 [![HUD Demo](http://img.youtube.com/vi/nsHNmOCuyps/0.jpg)](https://youtu.be/nsHNmOCuyps)
+
+## Poster
+Please visit the link below to see our poster presentation to get a general idea of the functionality of this project.
+![Project Poster](https://docs.google.com/presentation/d/1kuFngXGH1fza6Dajrrn5vswwG_kJHTLl748xnCjpy7E/edit?usp=sharing)
   
 ## Resources
   There are assests to this project that we did not make but that we downloaded for free from the Unity Asset Store. In order to correctly clone, compile, and run this repository, you will need the following free assets:
@@ -25,6 +36,4 @@ Welcome to Self Defense VR!
   OVR Utilities/Platform/Avatar: https://goo.gl/JNCKUu
 
   After cloning the repository to your computer and downloading the above assets, open one of the scenes in Unity and build the project being sure to add every scene besides "Animation Testing" to the build manager. Once this step is complete, feel free to build and enjoy our VR experience!
-  
-  To view our project poster follow this link: https://docs.google.com/presentation/d/1kuFngXGH1fza6Dajrrn5vswwG_kJHTLl748xnCjpy7E/edit?usp=sharing
 
