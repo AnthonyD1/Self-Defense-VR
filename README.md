@@ -10,7 +10,7 @@
 Welcome to Self Defense VR! 
   This virtual reality experience was developed by Anthony Delgado Pimental, Jacob Norris, Salem Ozaki, & Jordan Proby with voiceover additions by Paul Demange. This project was created during their time at Cornell College during their Computer Science Topics Class on Virtual Reality. This VR experience was created so that aspiring self defense enthusiasts could practice their skills without having to invest the time or money in a training gym or certified instructor.
   
-## Video Demo
+## Demo
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=nsHNmOCuyps
 " target="_blank"><img src="http://img.youtube.com/vi/nsHNmOCuyps/0.jpg" 
