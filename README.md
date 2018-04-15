@@ -80,7 +80,7 @@ To play our game you have two options:
   - Simply Download the corresponding packages, then import the .unityPackage files into your project (these will be located inside various files for each package). For a full tutorial see: https://www.youtube.com/watch?v=sxvKGVDmYfY (only watch the parts on the packages).
   
   Teleportation: https://www.youtube.com/watch?v=qjW4_1of7u4
-  - We used this tutorial as the base for out gaze teleportation but heavily modified it to be compatible with the Oculus' Touch controllers.
+  - We used this tutorial as the base for our gaze teleportation but heavily modified it to be compatible with the Oculus' Touch controllers.
   
   Inspiration for punch paths: https://vimeo.com/252023110
 
