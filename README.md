@@ -12,7 +12,7 @@ A virtual self-defense experience geared towards those who do not know much abou
 
 ## Introduction
 Welcome to Self-Defense VR! 
-  This virtual reality experience was developed by Anthony Delgado Pimental, Jacob Norris, Salem Ozaki, & Jordan Proby with voiceover additions by Paul Demange. This project was created during their time at Cornell College for their Computer Science Topics Class on Virtual Reality. This VR experience was created so that aspiring self-defense enthusiasts could hopefully practice their skills without having to invest the time or money in a training gym or certified instructor. 
+  This virtual reality experience was developed by Anthony Delgado, Jacob Norris, Salem Ozaki, & Jordan Proby with voiceover additions by Paul Demange. This project was created during their time at Cornell College for their Computer Science Topics Class on Virtual Reality. This VR experience was created so that aspiring self-defense enthusiasts could hopefully practice their skills without having to invest the time or money in a training gym or certified instructor. 
   This version of the project has limited functionality, but allows the user to run Drills and learn punch movements in various Tutorials. Punches, Hooks, and Uppercuts where the punches implemented.
   
 ## Demo
@@ -32,7 +32,7 @@ Please click on the image below to see our full poster presentation to get a gen
 ## Setup
 You will need:
 - Unity 2017.3.1
-- Visual Studios 2017 (could opt for a different text editor of you choosing)
+- Visual Studios 2017 (could opt for a different text editor of your choosing)
 - The free assets and libraries specified under [Resources](#resources)
 - Oculus Rift and related peripherals
 
@@ -62,7 +62,7 @@ To play our game you have two options:
 ## Bugs
 1. The player can currently walk on top of the standing punching bag. This can be disorienting for new users. To avoid, try to use teleportation exclusively and walking locomotion for micro-adjustments of position.
 2. There are issues with audio clips overlapping with each other when the player interacts with Boris. This is most common when the user is colliding with his pads.
-3. The user can currently teleport to a wall and stick their head through the wall and see the outside. To avoid this a collider could be added to the player's head.
+3. The user can currently teleport to a wall and stick their head through the wall and see the outside. To avoid this, a collider could be added to the player's head.
 4. There was an issue where if the user teleported too close to Boris, he would push the player back. The issue was with the box colliders on Boris and the colliders on the player model. We reduced the radius of the player model in the PlayerController prefab to try and solve this. For the most part it seems to work, but at times, if the user is very close, Boris will push them back a bit.
 
 ## Resources
